@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: lightslategray;
+}
+.logo{
+    font-size: 24px;
+    color: black;
+}
+.logo-half{
+    color: coral;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu-item{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover{
+    color: white;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    top:100% ;
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    padding: 10px 20px;
+    padding-top: 20px;
+    background-color: lightslategray;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+}
+.menu-bar{
+    font-size: 24px;
+    color: black;
+    display: none;
+    position: relative;
+}
+#mobile-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    background-color: lightslategray;
+    padding: 10px 10px;
+    width: 170px;
+    transition: 0.5s;
+}
+.mobile-dropdown:hover .mobile-dropdown-menu{
+    display: block;
+}
+.mobile-dropdown-menu{
+    list-style: none;
+    white-space: nowrap;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 20px 5px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
