@@ -3,12 +3,19 @@
     padding: 0;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: lightslategray;
+    padding: 20px 50px;
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
-    background-color: lightslategray;
 }
 .logo{
     font-size: 24px;
@@ -81,6 +88,61 @@
     display: none;
     margin-left: 20px;
 }
+.hero-section{
+    background-image: url('./../assets/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg');
+    background-size: cover;
+}
+
+.hero-area{
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.join-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: brown;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+.slider-section{
+    height: 500px;
+    background-image: url('../assets//meetings-bg.jpg');
+    position: relative;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 40px;
+    gap: 30px;
+    position: absolute;
+    top: -120px;
+}
+
+.card-item{
+    background-image: url('../assets/meetings-bg.jpg');
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-item-container{
+    background-color: rgb(255, 0, 0, 0.4);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .navbar{
@@ -91,5 +153,9 @@
     }
     .menu-bar{
         display: block;
+    }
+    .container {
+        max-width: 600px;
+         margin: 0 auto;
     }
 }
