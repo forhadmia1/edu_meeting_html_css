@@ -110,9 +110,10 @@ header{
     font-weight: 600;
 }
 .slider-section{
-    height: 500px;
     background-image: url('../assets//meetings-bg.jpg');
+    background-size: cover;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .card-container{
@@ -138,6 +139,82 @@ header{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+
+.meeting-container{
+    padding-top: 200px;
+    width: 1000px;
+    margin:0 auto;
+}
+
+.meeting-card-container{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.meeting-card-container img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.meeting{
+    width: 250px;
+    background-color: white;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.meeting >ul {
+    list-style: none;
+}
+.meeting >h2 {
+    font-style: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.meeting >ul>li {
+    margin-top: 20px;
+    font-weight: 500;
+}
+.meeting button{
+    background-color: brown;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.cards{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+.meeting-card-item{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+.card-info{
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date>h3{
+    color: brown;
+    font-size: 20px;
+}
+.date>p{
+    font-size: 20px;
 }
 
 
