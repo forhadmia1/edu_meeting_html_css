@@ -20,6 +20,7 @@ document.getElementById('body').addEventListener('click', () => {
 // accordion functionality
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 const defaultAccordion = accordionItemHeaders[0]
+defaultAccordion.style.color = '#E29A28'
 defaultAccordion.classList.add("active");
 defaultAccordion.nextElementSibling.style.maxHeight = '200px';
 
@@ -29,6 +30,7 @@ const accordion = () => {
         accordionItemHeader.classList.remove("active");
         const accordionItemBody = accordionItemHeader.nextElementSibling;
         accordionItemBody.style.maxHeight = 0;
+        accordionItemHeader.style.color = 'Black'
     })
 }
 
@@ -39,6 +41,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         const accordionItemBody = accordionItemHeader.nextElementSibling;
         if (accordionItemHeader.classList.contains("active")) {
             accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            accordionItemHeader.style.color = '#E29A28'
         }
         else {
             accordionItemBody.style.maxHeight = 0;
