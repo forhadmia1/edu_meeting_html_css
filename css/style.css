@@ -184,7 +184,7 @@ header{
     border-radius: 30px;
     border: none;
     margin-top: 20px;
-
+    color: white;
 }
 
 .cards{
@@ -215,6 +215,94 @@ header{
 }
 .date>p{
     font-size: 20px;
+}
+.apply-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 50px;
+    background-image: url('../assets/images/apply-bg.jpg');
+    grid-gap: 40px;
+}
+
+.join-us-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.card-join{
+    padding: 40px;
+    background-color: rgb(86, 92, 97, 0.3);
+    color: white;
+}
+
+.card-join>h2{
+    font-size: 30px;
+}
+.card-join>p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card-join>button{
+    padding: 10px 20px;
+    background-color: brown;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.apply-btn{
+    background-color:#E29A28 !important;
+}
+
+.accordion-container{
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+
+}
+
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
 
