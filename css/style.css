@@ -3,14 +3,24 @@
     padding: 0;
 }
 
+body {
+    color: #999;
+    background: url('../assets/images/meetings-bg.jpg') no-repeat center center fixed;
+    font-family: 'Roboto', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
 header{
-    background-color: lightslategray;
-    padding: 20px 50px;
+    background-color: white;
+    padding: 30px 50px;
 }
 .navbar{
     display: flex;
@@ -37,7 +47,7 @@ header{
 }
 
 .menu-item:hover{
-    color: white;
+    color: steelblue;
 }
 .dropdown{
     position: relative;
@@ -51,7 +61,7 @@ header{
     list-style: none;
     padding: 10px 20px;
     padding-top: 20px;
-    background-color: lightslategray;
+    background-color: white;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -74,7 +84,7 @@ header{
     top: 100%;
     right: 0;
     list-style: none;
-    background-color: lightslategray;
+    background-color: white;
     padding: 10px 10px;
     width: 170px;
     transition: 0.5s;
@@ -89,8 +99,17 @@ header{
     margin-left: 20px;
 }
 .hero-section{
-    background-image: url('./../assets/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg');
-    background-size: cover;
+    position: relative;
+    background-color:rgba(65, 69, 77, 0.5);
+}
+#backgroundVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -100;
 }
 
 .hero-area{
@@ -110,8 +129,6 @@ header{
     font-weight: 600;
 }
 .slider-section{
-    background-image: url('../assets//meetings-bg.jpg');
-    background-size: cover;
     position: relative;
     padding-bottom: 50px;
 }
@@ -143,7 +160,7 @@ header{
 
 .meeting-container{
     padding-top: 200px;
-    width: 1000px;
+    width: 1100px;
     margin:0 auto;
 }
 
@@ -163,6 +180,7 @@ header{
     margin-top: 50px;
     padding: 40px;
     border-radius: 30px;
+    color: black;
 }
 
 .meeting >ul {
@@ -201,6 +219,7 @@ header{
 }
 .card-info{
     display: flex;
+    align-items: center;
     gap: 15px;
     padding: 20px;
 }
@@ -313,6 +332,7 @@ header{
 .popular-header>h2{
     margin-bottom: 10px;
     font-weight: bold;
+    color: white;
 }
 
 .course-container{
@@ -321,7 +341,8 @@ header{
     gap: 40px;
 }
 .course-card{
-    background-color: beige;
+    background-color: white;
+    color: #111;
 }
 .course-card img{
    width: 100%;
@@ -337,6 +358,9 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+}
+.rating>.bx{
+    color: #E29A28;
 }
 
 /* about styles */
@@ -408,6 +432,16 @@ header{
 }
 .play-icon>img{
     width: 100%;
+}
+.footer{
+    padding: 50px 0;
+    border-top: 1px solid slategray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
 }
 
 
