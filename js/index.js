@@ -1,21 +1,24 @@
 // mobile menu function
 const menu = document.getElementById('menu-bar')
 const menuContainer = document.getElementById('mobile-menu')
-let ishide = false;
+let ishide = true;
+menuContainer.style.display = 'none'
+menu.classList.add('bx-menu')
+menu.classList.remove('bx-x')
 
 menu.addEventListener('click', (e) => {
     ishide = !ishide;
     if (ishide) {
         menuContainer.style.display = 'none'
+        menu.classList.add('bx-menu')
+        menu.classList.remove('bx-x')
     } else {
         menuContainer.style.display = 'block'
+        menu.classList.remove('bx-menu')
+        menu.classList.add('bx-x')
     }
 })
 
-document.getElementById('body').addEventListener('click', () => {
-    ishide = false;
-    menuContainer.style.display = 'none'
-})
 
 // accordion functionality
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
